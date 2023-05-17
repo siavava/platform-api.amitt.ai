@@ -67,13 +67,14 @@ router.put('/posts/:id', async (req, res) => {
 
 function reformatPostTags(post) {
   const {
-    title, id, tags, content,
+    title, id, tags, content, coverUrl,
   } = post;
   return {
     title,
     id,
     tags: tags.join(','),
     content,
+    coverUrl,
   };
 }
 
