@@ -38,7 +38,7 @@ router.get('/posts/:id', async (req, res) => {
     return res.json(reformatPostTags(post));
   } catch (error) {
     // return res.status(404).json({ error: error.message });
-    return res.status(404).json({ error: 'Post not found'});
+    return res.status(404).json({ error: 'Post not found' });
   }
 });
 
