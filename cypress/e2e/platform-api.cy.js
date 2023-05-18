@@ -142,6 +142,7 @@ describe('Lab5: CRUD operations', () => {
       },
     }).then((response) => {
       expect(response.status).to.eq(200);
+      console.log(`response: ${JSON.stringify(response)}`);
       expect(response.body.title).to.eq('updated post');
     });
   });

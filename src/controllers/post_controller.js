@@ -30,6 +30,7 @@ export async function updatePost(id, postFields) {
   // await updating a post by id
   const post = await Post.findById(id);
   post.title = postFields.title || post.title;
-  await post.save();
+  // await post.save();
   await post.updateOne(postFields);
+  return post;
 }

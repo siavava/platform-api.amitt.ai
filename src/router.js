@@ -21,15 +21,13 @@ router.post('/posts', async (req, res) => {
 router.get('/posts', async (req, res) => {
   try {
     const rawPosts = await Posts.getPosts();
-
     const posts = rawPosts.map((post) => {
       return reformatPostTags(post);
     });
-    // posts.forEach((post) => { post.tags = post.tags.join(','); });
     console.log(`posts: ${posts}`);
     return res.json(posts);
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    return res.status(404).json({ error: error.message });
   }
 });
 
@@ -39,18 +37,18 @@ router.get('/posts/:id', async (req, res) => {
     const post = await Posts.getPost(id);
     return res.json(reformatPostTags(post));
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    // return res.status(404).json({ error: error.message });
+    return res.status(404).json({ error: 'Post not found'});
   }
 });
 
 router.delete('/posts/:id', async (req, res) => {
   try {
     const { id } = req.params;
-    // const post = await Posts.deletePost(id);
     await Posts.deletePost(id);
-    return res.json({ id });
+    return res.status(200).json({ id });
   } catch (error) {
-    return res.status(500).json({ error: error.message });
+    return res.json({ error: error.message });
   }
 });
 
