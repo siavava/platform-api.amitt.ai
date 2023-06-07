@@ -8,7 +8,7 @@
     "test": "cypress run",
     "start": "nodemon src/server.js --exec babel-node",
     "babel-start": "babel-node src/server.js",
-    "build": "babel src -d dist",
+    "build": "babel src -d dist && netlify deploy",
     "prod": "node dist/server.js"
   },
   "license": "ISC",
