@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 
 router.get('/home', (req, res) => {
   // return index.html
-  res.sendFile('index.html');
+  res.sendFile('/index.html');
   // res.json({ message: 'This is the home route.' });
 });
 
