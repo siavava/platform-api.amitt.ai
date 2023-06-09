@@ -8,7 +8,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/home', (req, res) => {
-  res.json({ message: 'This is the home route.' });
+  // return index.html
+  res.sendFile('index.html', { root: './public' });
+  // res.json({ message: 'This is the home route.' });
 });
 
 router.get('/test', (req, res) => {
