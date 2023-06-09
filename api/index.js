@@ -3,7 +3,7 @@ import cors from 'cors';
 import path from 'path';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
-import router from './router';
+import router from '../src/router';
 
 // initialize
 const app = express();
