@@ -6,7 +6,7 @@
     },
     {
       "source": "/",
-      "destination": "/api/home"
+      "destination": "/index.html"
     }
   ]
 }
