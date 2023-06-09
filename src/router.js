@@ -6,7 +6,7 @@ const router = Router();
 router.get('/', (req, res) => {
   // res.json({ message: 'welcome to my blog api!' });
 
-  res.sendFile('./index.html', { root: `${__dirname}/../static` });
+  res.sendFile('./index.html', { root: `${__dirname}/../views` });
 });
 
 router.get('/test', (req, res) => {
