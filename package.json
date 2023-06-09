@@ -40,16 +40,5 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "nodemon": "^2.0.22"
-  },
-  "pkg": {
-    "scripts": {
-      "start": "nodemon src/server.js --exec babel-node",
-      "babel-start": "babel-node src/server.js",
-      "build": "babel src -d dist",
-      "prod": "node dist/server.js"
-    },
-    "assets": [
-      "static/**/*"
-    ]
   }
 }

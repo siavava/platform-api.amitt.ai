@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 
 // enable only if you want static assets from folder static
 app.use(express.static('static'));
-app.use(express.static(path.join(__dirname, '../static')));
+// app.use(express.static(path.join(__dirname, '../static')));
 
 // this just allows us to render ejs from the ../app/views directory
 app.set('views', path.join(__dirname, '../src/views'));
@@ -31,11 +31,11 @@ app.use(express.json()); // To parse the incoming requests with JSON payloads
 // additional init stuff should go before hitting the routing
 
 // default index route
-// app.get('/', (req, res) => {
-//   // res.send('hi');
-//   // res.sendFile('/index.html');
-//   res.sendFile('./index.html', { root: `${__dirname}/../public` });
-// });
+router.get('/', (req, res) => {
+  res.json({ message: 'welcome to my blog api!' });
+
+  // res.sendFile('./index.html', { root: `${__dirname}/../views` });
+});
 
 // START THE SERVER
 // =============================================================================
