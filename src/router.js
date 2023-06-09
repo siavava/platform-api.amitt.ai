@@ -4,7 +4,11 @@ import * as Posts from './controllers/post_controller';
 const router = Router();
 
 router.get('/', (req, res) => {
-  res.json({ message: 'welcome to our blog api!' });
+  res.json({ message: 'welcome to my blog api!' });
+});
+
+router.get('/test', (req, res) => {
+  res.json({ message: 'This is a test route.' });
 });
 
 // ? your routes will go here
