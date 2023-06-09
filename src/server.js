@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 app.set('view engine', 'ejs');
 
 // enable only if you want static assets from folder static
-app.use(express.static('static'));
+app.use(express.static('public'));
 // app.use(express.static(path.join(__dirname, '../static')));
 
 // this just allows us to render ejs from the ../app/views directory
