@@ -31,11 +31,9 @@ app.use(express.json()); // To parse the incoming requests with JSON payloads
 // additional init stuff should go before hitting the routing
 
 // default index route
-// router.get('/', (req, res) => {
-//   res.json({ message: 'welcome to my blog api!' });
-
-//   // res.sendFile('./index.html', { root: `${__dirname}/../views` });
-// });
+router.get('/', (req, res) => {
+  res.sendFile('./index.html', { root: `${__dirname}/../public` });
+});
 
 // START THE SERVER
 // =============================================================================
