@@ -31,7 +31,8 @@ app.use(express.json()); // To parse the incoming requests with JSON payloads
 
 // default index route
 app.get('/', (req, res) => {
-  res.send('hi');
+  // res.send('hi');
+  res.sendFile('/index.html', { root: `${__dirname}/../public` });
 });
 
 // START THE SERVER

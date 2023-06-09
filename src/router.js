@@ -4,7 +4,9 @@ import * as Posts from './controllers/post_controller';
 const router = Router();
 
 router.get('/', (req, res) => {
-  res.json({ message: 'welcome to my blog api!' });
+  // res.json({ message: 'welcome to my blog api!' });
+
+  res.sendFile('/index.html', { root: `${__dirname}/../public` });
 });
 
 router.get('/home', (req, res) => {
