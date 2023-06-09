@@ -5,10 +5,6 @@ import morgan from 'morgan';
 import mongoose from 'mongoose';
 import router from './router';
 
-// import css files
-import '../static/style.css';
-import '../static/CohereVariable.woff2';
-
 // initialize
 const app = express();
 
