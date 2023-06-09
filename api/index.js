@@ -55,3 +55,5 @@ async function startServer() {
 app.use('/api', router);
 
 startServer();
+
+export default app;
