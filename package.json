@@ -50,16 +50,6 @@
     },
     "assets": [
       "static/**/*"
-    ],
-    "outputPath": "dist",
-    "targets": [
-      "node18-linux-x64",
-      "node18-macos-x64",
-      "node18-win-x64"
-    ],
-    "files": [
-      "static/**/*",
-      "package.json"
     ]
   }
 }
