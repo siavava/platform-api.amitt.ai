@@ -49,7 +49,7 @@
       "prod": "node dist/server.js"
     },
     "assets": [
-      "src/static/**/*"
+      "static/**/*"
     ],
     "outputPath": "dist"
   }
