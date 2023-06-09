@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
   res.json({ message: 'welcome to my blog api!' });
 });
 
+router.get('/home', (req, res) => {
+  res.json({ message: 'This is the home route.' });
+});
+
 router.get('/test', (req, res) => {
   res.json({ message: 'This is a test route.' });
 });
