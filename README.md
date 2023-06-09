@@ -2,9 +2,9 @@
 
 Express server with a MongoDB database for storing notes.
 
-[deployed url](https://notes-api-siavava.onrender.com/api/posts)
+Deployed API: [`platform-api.amitt.ai`](https://platform-api.amitt.ai)
 
-[deployed frontend url](https://notes-frontend-siavava.onrender.com/)
+Deployed FrontEnd: [`platform.amitt.ai`](https://platform.amitt.ai)
 
 ## What Worked Well
 
