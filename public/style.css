@@ -24,8 +24,6 @@
 }
 
 body {
-  --background: #121212;
-  --foreground: #BD8FC0;
   background-color: var(--background);
   color: var(--foreground);
   width: 100vw;
@@ -37,6 +35,7 @@ body {
   place-content: center;
   place-items: center;
   font-family: "Cohere Variable", sans-serif;
+  overflow: hidden;
 }
 
 .content-container {
