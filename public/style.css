@@ -13,7 +13,11 @@
   font-display: swap;
 }
 
-
+html {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+}
 
 :root {
   --background: #121212;
@@ -26,16 +30,17 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  width: 100vw;
-  height: 100vh;
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100svw;
+  height: 100svh;
+  max-width: 100svw;
+  max-height: 100svh;
   display: flex;
   flex-direction: column;
   place-content: center;
   place-items: center;
   font-family: "Cohere Variable", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .content-container {
@@ -44,7 +49,6 @@ body {
   min-height: 320px; */
   border-radius: 20px;
   width: min(80vw, 800px);
-
   display: flex;
   flex-direction: column;
   place-content: center;
