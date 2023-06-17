@@ -2,7 +2,7 @@
   "name": "PlatformAPI",
   "version": "6.0.0",
   "description": "",
-  "author": "CS52",
+  "author": "Amittai",
   "main": "src/server.js",
   "scripts": {
     "test": "cypress run",
