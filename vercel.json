@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "@vercel/typescript"
+      "use": "@vercel/node"
     },
     {
       "src": "public/**",
