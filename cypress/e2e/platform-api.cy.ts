@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 // globals
-let postId;
-let token;
+let postId: string;
+let token: string;
 
 const getUniqueId = () => { return Cypress._.uniqueId(Date.now().toString()); };
 const email = `${getUniqueId()}@test.com`;
