@@ -6,7 +6,7 @@ module.exports = defineConfig({
   video: false,
   screenshotOnRunFailure: false,
   e2e: {
-    setupNodeEvents(on, config) {
+    setupNodeEvents(on: any, config: any) {
       return require('./cypress/plugins/index.js')(on, config);
     },
     baseUrl: 'http://localhost:9090',
